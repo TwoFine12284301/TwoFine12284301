@@ -26,9 +26,7 @@ echo "Commit Comment?"
 read COMMIT
 #echo $COMMIT
 
-git commit -m "$COMMIT"
-echo $(git commit -m "$COMMIT") 
+git commit -m "$COMMIT" 
 
 git push
-echo $(git push)
  
