@@ -10,6 +10,8 @@ if [ $(pwd) != ../../PROJECTS ];
   exit
 fi
 
+git status
+
 if [ -z $1 ] 
  then 
   echo "Enter a directory"
@@ -18,8 +20,7 @@ else
  D1=$1
 fi
 
-git add "$D1"
-echo $(git add "$D1") 
+git add "$D1" 
 
 echo "Commit Comment?" 
 
