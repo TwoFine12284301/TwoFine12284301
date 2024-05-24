@@ -1,6 +1,14 @@
 #!/bin/bash
 
-cd .. #Be inside PROJECT directory 
+#Be inside PROJECT directory 
+if [ $(pwd) != ../../PROJECTS ];
+ then
+  cd ../../PROJECTS
+  pwd
+ else
+  echo The Program is not inside desired file
+  exit
+fi
 
 if [ -z $1 ] 
  then 
