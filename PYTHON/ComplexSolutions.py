@@ -2,10 +2,12 @@
 
 from math import pi
 from fractions import Fraction
-k_list = [0, 1, 2, 3, 4, 6]
-k_result = []
-base = 5.2073231
-base2 = 10.50064016
+
+def solutions():
+ k_list = [0, 1, 2, 3, 4, 6]
+ k_result = []
+ base = 5.2073231
+ base2 = 10.50064016
 
 
 #for k in k_list:
@@ -21,8 +23,9 @@ base2 = 10.50064016
 #     k_result.append(result)
 
 
-for k in k_list:
- result = (base + k*pi)
- k_result.append(Fraction(result))
+ for k in k_list:
+  result = (base + k*pi)
+  k_result.append(Fraction(result))
 
-print(k_result)  
+ return(k_result)
+  
